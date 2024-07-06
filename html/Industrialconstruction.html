@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ka">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>სამრეწველო მშენებლობა</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="//cdn.web-fonts.ge/fonts/bpg-arial-caps/css/bpg-arial-caps.min.css"
+    />
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/media.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar" id="navbar">
+        <div class="burgerBar" id="burgerBar">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <div class="menu" id="menu">
+          <div class="search-container">
+            <i class="fas fa-search search-icon"></i>
+            <input type="text" id="searchInput" placeholder="ძიება" />
+          </div>
+          <ul>
+            <li>
+              <button class="bar" type="button">
+                <i class="fa-solid fa-business-time"></i>
+                <p>კომპანიის შესახებ</p>
+                <i class="fa-solid fa-angle-up arrow-icon"></i>
+              </button>
+              <div class="sub-menu">
+                <ul>
+                  <li>
+                    <button
+                      class="data bar"
+                      type="button"
+                      data-link="/html/crew.html"
+                    >
+                      ელემენტ კონსტრაქშენის გუნდი
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="data bar"
+                      type="button"
+                      data-link="/html/workingsafety.html"
+                    >
+                      შრომის უსაფრთხოება
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="data bar"
+                      type="button"
+                      data-link="/html/qualitycontrol.html"
+                    >
+                      ხარისხის უზრუნველყოფა
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="data bar"
+                      type="button"
+                      data-link="/html/partners.html"
+                    >
+                      დამკვეთები/პარტნიორები
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="data bar"
+                      type="button"
+                      data-link="/html/Career.html"
+                    >
+                      კარიერა
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <button class="data bar" type="button" data-link="/html/new.html">
+                <i class="fa-solid fa-newspaper"></i>
+                <p>სიახლეები</p>
+              </button>
+            </li>
+            <li>
+              <button class="data bar" type="button" data-link="/html/">
+                <i class="fa-solid fa-clipboard"></i>
+                <p>ტრენინგი</p>
+              </button>
+            </li>
+            <li>
+              <button class="bar" type="button">
+                <i class="fa-regular fa-folder-open"></i>
+                <p>სერვისები</p>
+                <i class="fa-solid fa-angle-up arrow-icon"></i>
+              </button>
+              <div class="sub-menu">
+                <ul>
+                  <li>
+                    <button
+                      class="data bar"
+                      type="button"
+                      data-link="/html/project.html"
+                    >
+                      პროექტირება
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="data bar"
+                      type="button"
+                      data-link="/html/building.html"
+                    >
+                      მშენებლობა
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="data bar"
+                      type="button"
+                      data-link="/html/repair.html"
+                    >
+                      რემონტი
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="data bar"
+                      type="button"
+                      data-link="/html/Industrialconstruction.html"
+                    >
+                      სამრეწველო მშენებლობა
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="data bar"
+                      type="button"
+                      data-link="/html/productionfloors.html"
+                    >
+                      საწარმოო იტაკები
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <button class="bar" type="button">
+                <i class="fa-solid fa-diagram-project"></i>
+                <p>პროექტები</p>
+                <i class="fa-solid fa-angle-up arrow-icon"></i>
+              </button>
+              <div class="sub-menu">
+                <ul>
+                  <li>
+                    <button
+                      class="data bar"
+                      type="button"
+                      data-link="/html/finished.html"
+                    >
+                      დასრულებული
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="data bar"
+                      type="button"
+                      data-link="/html/Currentprojects.html"
+                    >
+                      დაუსრულებელი
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="logo">
+          <a href="/index.html">
+            <img
+              class="delour"
+              src="/images/f_profile-removebg-preview.png"
+              alt="delour logo"
+            />
+          </a>
+        </div>
+        <div>
+          <button class="contactButton" id="contactButton">
+            კონტაქტი<i class="fa-regular fa-comments" id="comment"></i>
+          </button>
+        </div>
+        <div class="contactContainer" id="contactContainer">
+          <div class="contact-image-container">
+            <div class="contact-img-info">
+              <p>
+                Want to get in touch? We're happy to hear from you. Use our form
+                for your questions, comments, or feedback.
+              </p>
+            </div>
+          </div>
+          <div class="contact-info-container">
+            <div class="contact-info">
+              <div class="bar info">
+                <i class="fa-solid fa-phone"></i>
+                <p>551131228</p>
+              </div>
+              <div class="bar info">
+                <i class="fa-solid fa-envelope"></i>
+                <p>revazishvilisaba37@gmail.com</p>
+              </div>
+              <div class="bar info">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>ნავთლუღის ქუჩა</p>
+              </div>
+              <div class="bar info">
+                <i class="fa-brands fa-facebook"></i>
+                <p>delour</p>
+              </div>
+            </div>
+            <div class="adress-info">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5959.389804324902!2d44.83945362310779!3d41.68393215239119!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ska!2sge!4v1719847023371!5m2!1ska!2sge"
+                class="map"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="projects-container industrial">
+        <div class="projects-title-container">
+          <h1>სამრეწველო მშენებლობა</h1>
+        </div>
+        <img src="../images/industrialconstruction.jpg" alt="sawarmo-img" />
+        <p>
+          ქვეყანაში არსებული ეკონომიკური გამოწვევებიდან გამომდინარე, საწარმოო და
+          სასაწყობე ფართების (ლითონის ასაწყობი კონსტრუქციების) მშენებლობაზე სულ
+          უფრო მეტი მოთხოვნა ჩნდება.
+        </p>
+        <p>
+          ჩვენი კომპანიის მიზანია, არ ჩამორჩეს ამ მიმართულებით ბაზრის
+          განვითარებას და უმოკლეს ვადებში ერთ-ერთი მოწინავე ადგილი დაიკავოს
+          ქართულ სამშენებლო რეალობაში.
+        </p>
+        <p>
+          ამ სფეროში წარმატებით მოღვაწეობის განატიაა ჩვენი გამოცდილი
+          კონსტრუქტორების გუნდი, რომელიც ეფექტურად მოარგებს პროექტს თქვენს
+          მოთხოვნებს, რაც ხარჯებისა და მშენებლობის ვადების მაქსიმალურად
+          ოპტიმიზაციის საშუალებას მოგვცემს.
+        </p>
+      </div>
+      <section>
+        <div class="info-container">
+          <div class="info-container1">
+            <img src="../images/builder.png" alt="builde logo" />
+            <p>450</p>
+            <h4>თანამშრომელი</h4>
+          </div>
+          <div class="info-container1">
+            <img src="../images/deal.png" alt="handshake logo" />
+            <p>65</p>
+            <h4>დამკვეთი</h4>
+          </div>
+          <div class="info-container1">
+            <img src="../images/project-management.png" alt="managment logo" />
+            <p>90</p>
+            <h4>პროექტი</h4>
+          </div>
+          <div class="info-container1">
+            <img src="../images/service.png" alt="service logo" />
+            <p>31</p>
+            <h4>ტექნიკის ერთეული</h4>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <img src="../images/delour1.jpg" />
+        <div class="one-container">
+          <h4>კომპანიის შესახებ</h4>
+          <ul>
+            <li>
+              <a href="crew.html">ელემენტ კონსტრაქშენის გუნდი</a>
+            </li>
+            <li>
+              <a href="workingsafety.html">შრომის უსაფრთხოება</a>
+            </li>
+            <li>
+              <a href="qualitycontrol.html">ხარისხის უზრუნველყოფა</a>
+            </li>
+            <li>
+              <a href="partners.html">დამკვეთები/პარტნიორები</a>
+            </li>
+            <li>
+              <a href="Career.html">კარიერა</a>
+            </li>
+          </ul>
+        </div>
+        <div class="one-container">
+          <h4>სერვისები</h4>
+          <ul>
+            <li>
+              <a href="project.html">პროექტირება</a>
+            </li>
+            <li>
+              <a href="building.html">მშენებლობა</a>
+            </li>
+            <li>
+              <a href="repair.html">რემონტი</a>
+            </li>
+            <li>
+              <a href="Industrialconstruction.html">სამრეწველო მშენებლობა</a>
+            </li>
+            <li>
+              <a href="productionfloors.html">საწარმოო იატაკები</a>
+            </li>
+          </ul>
+        </div>
+        <div class="one-container">
+          <h4>კონტაქტი</h4>
+          <ul class="contact-ul">
+            <li>
+              <a><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+              <a><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+              <a><i class="fa-brands fa-youtube"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="/js/script.js"></script>
+  </body>
+</html>

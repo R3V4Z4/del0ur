@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="ka">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Element Construction</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="./node_modules/@splidejs/splide/dist/css/themes/splide-sea-green.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="//cdn.web-fonts.ge/fonts/bpg-arial-caps/css/bpg-arial-caps.min.css"
+    />
+
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/media.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar" id="navbar">
+        <div class="burgerBar" id="burgerBar">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <div class="menu" id="menu">
+          <div class="search-container">
+            <i class="fas fa-search search-icon"></i>
+            <input type="text" id="searchInput" placeholder="ძიება" />
+          </div>
+          <ul>
+            <li>
+              <button class="bar" type="button">
+                <i class="fa-solid fa-business-time"></i>
+                <p>კომპანიის შესახებ</p>
+                <i class="fa-solid fa-angle-up arrow-icon"></i>
+              </button>
+              <div class="sub-menu">
+                <ul>
+                  <li>
+                    <button
+                      class="data bar"
+                      type="button"
+                      data-link="/html/crew.html"
+                    >
+                      ელემენტ კონსტრაქშენის გუნდი
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="data bar"
+                      type="button"
+                      data-link="/html/workingsafety.html"
+                    >
+                      შრომის უსაფრთხოება
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="data bar"
+                      type="button"
+                      data-link="/html/qualitycontrol.html"
+                    >
+                      ხარისხის უზრუნველყოფა
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="data bar"
+                      type="button"
+                      data-link="/html/partners.html"
+                    >
+                      დამკვეთები/პარტნიორები
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="data bar"
+                      type="button"
+                      data-link="/html/Career.html"
+                    >
+                      კარიერა
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <button class="data bar" type="button" data-link="/html/new.html">
+                <i class="fa-solid fa-newspaper"></i>
+                <p>სიახლეები</p>
+              </button>
+            </li>
+            <li>
+              <button class="data bar" type="button" data-link="/html/">
+                <i class="fa-solid fa-clipboard"></i>
+                <p>ტრენინგი</p>
+              </button>
+            </li>
+
+            <li>
+              <button class="bar" type="button">
+                <i class="fa-regular fa-folder-open"></i>
+                <p>სერვისები</p>
+                <i class="fa-solid fa-angle-up arrow-icon"></i>
+              </button>
+              <div class="sub-menu">
+                <ul>
+                  <li>
+                    <button
+                      class="data bar"
+                      type="button"
+                      data-link="/html/project.html"
+                    >
+                      პროექტირება
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="data bar"
+                      type="button"
+                      data-link="/html/building.html"
+                    >
+                      მშენებლობა
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="data bar"
+                      type="button"
+                      data-link="/html/repair.html"
+                    >
+                      რემონტი
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="data bar"
+                      type="button"
+                      data-link="/html/Industrialconstruction.html"
+                    >
+                      სამრეწველო მშენებლობა
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="data bar"
+                      type="button"
+                      data-link="/html/productionfloors.html"
+                    >
+                      საწარმოო იტაკები
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <button class="bar" type="button">
+                <i class="fa-solid fa-diagram-project"></i>
+                <p>პროექტები</p>
+                <i class="fa-solid fa-angle-up arrow-icon"></i>
+              </button>
+              <div class="sub-menu">
+                <ul>
+                  <li>
+                    <button
+                      class="data bar"
+                      type="button"
+                      data-link="/html/finished.html"
+                    >
+                      დასრულებული
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="data bar"
+                      type="button"
+                      data-link="/html/Currentprojects.html"
+                    >
+                      დაუსრულებელი
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="logo">
+          <a>
+            <img
+              class="delour"
+              src="images/f_profile-removebg-preview.png"
+              alt="delour logo"
+            />
+          </a>
+        </div>
+        <div>
+          <button class="contactButton" id="contactButton">
+            კონტაქტი<i class="fa-regular fa-comments" id="comment"></i>
+          </button>
+        </div>
+        <div class="contactContainer" id="contactContainer">
+          <div class="contact-image-container">
+            <div class="contact-img-info">
+              <p>
+                Want to get in touch? We're happy to hear from you. Use our form
+                for your questions, comments, or feedback.
+              </p>
+            </div>
+          </div>
+          <div class="contact-info-container">
+            <div class="contact-info">
+              <div class="bar info">
+                <i class="fa-solid fa-phone"></i>
+                <p>551131228</p>
+              </div>
+              <div class="bar info">
+                <i class="fa-solid fa-envelope"></i>
+                <p>revazishvilisaba37@gmail.com</p>
+              </div>
+              <div class="bar info">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>ნავთლუღის ქუჩა</p>
+              </div>
+              <div class="bar info">
+                <i class="fa-brands fa-facebook"></i>
+                <p>delour</p>
+              </div>
+            </div>
+            <div class="adress-info">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5959.389804324902!2d44.83945362310779!3d41.68393215239119!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ska!2sge!4v1719847023371!5m2!1ska!2sge"
+                class="map"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div class="about-container">
+          <img
+            class="forever-bike"
+            src="images/construction3.jpg"
+            alt="construction image"
+          />
+          <div class="about-container1">
+            <div class="about-container2">
+              <h1>კომპანიის შესახებ</h1>
+              <p>
+                სამშენებლო კომპანია "ელემენტ კონსტრაქშენი" 2007 წელს დაარსდა.
+                კომპანიის მრავალწლიანი გამოცდილება არის სანდოობის, საიმედოობისა
+                და გრძელვადიანი თანამშრომლობის გარანტი. „ელემენტ კონსტრაქშენი“
+                სთავაზობს თავიანთ მომხმარებლებს გონივრულ, ოპტიმალურ და
+                თანამედროვე გადაწყვეტილებებს მშენებლობის დაგეგმვის, მართვისა და
+                შესრულების კუთხით.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="why-container">
+          <h2>რატომ ელემენტ კონსტრაქშენი?</h2>
+          <p>
+            პროფესიონალიზმი, მრავალწლიანი გამოცდილება და სიზუსტე მშენებლობის
+            ყველა ელემენტში თქვენი წარმატების საწინდარია.
+          </p>
+        </div>
+      </section>
+      <section>
+        <div class="title-container">
+          <h2>სერვისები</h2>
+        </div>
+        <div id="carousel1" class="splide">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <img src="images/slider1.jpg" alt="building image" />
+                <div class="img-info">
+                  <h2>მშენებლობა</h2>
+                  <p>ინდუსტრიული, ჰიდროტექნიკური და სამოქალაქო მშენებლობა</p>
+                  <button class="data more" data-link="html/building.html">
+                    იხილეთ ვრცლად...
+                  </button>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <img src="images/slider2.jpg" alt="floor image" />
+                <div class="img-info">
+                  <h2>ინდუსტრიული იატაკი</h2>
+                  <p>იატაკის ტექნოლოგიების სრული სერვისი</p>
+                  <button
+                    class="data more"
+                    data-link="html/productionfloors.html"
+                  >
+                    იხილეთ ვრცლად...
+                  </button>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <img src="images/slider3.jpg" alt="factory image" />
+                <div class="img-info">
+                  <h2>სამრეწველო მშენებლობა</h2>
+                  <p>N1 ინდუსტრიული სამშენებლო კომპანია</p>
+                  <button
+                    class="data more"
+                    data-link="/html/Industrialconstruction.html"
+                  >
+                    იხილეთ ვრცლად...
+                  </button>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <img src="images/slider4.jpg" alt="repair image" />
+                <div class="img-info">
+                  <h2>რემონტი</h2>
+                  <p>
+                    სარემონტო სამუშაოები პროცესში ინოვაციური ელემენტების
+                    ჩართულობით
+                  </p>
+                  <button class="data more" data-link="/html/repair.html">
+                    იხილეთ ვრცლად...
+                  </button>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <img src="images/slider5.png" alt="projecting image" />
+                <div class="img-info">
+                  <h2>პროექტირება</h2>
+                  <p>ფუნქციურად განსხვავებული შენობა-ნაგებობების პროექტირება</p>
+                  <button class="data more" data-link="/html/project.html">
+                    იხილეთ ვრცლად...
+                  </button>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="title-container">
+          <h2>სიახლეები</h2>
+        </div>
+        <div class="services-container1">
+          <a href="html/sonniva.html">
+            <div class="services first">
+              <div class="news-container">
+                <div class="news">
+                  <p>ელემენტ კონსტრაქშენმა სონნივა ჯორჯიას საწყობი ააშენა</p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="html/ltb.html">
+            <div class="services second">
+              <div class="news-container">
+                <div class="news">
+                  <p>გრძელდება ელთიბის ავტომატიზებული საწარმოს მშენებლობა</p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="html/efes.html">
+            <div class="services third">
+              <div class="news-container">
+                <div class="news">
+                  <p>ელემენტ კონსტრაქშენი ეფეს საქართველოს საწყობს აშენებს</p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="html/dadiani.html">
+            <div class="services fourth">
+              <div class="news-container">
+                <div class="news">
+                  <p>ელემენტ კონსტრაქშენი დადიანი N100-ის მშენებლობას იწყებს</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
+      <section>
+        <div class="title-container">
+          <h4>დამკვეთები</h4>
+        </div>
+        <div id="carousel2" class="splide">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <img src="images/damkveti1.png" alt="Image 4" />
+              </li>
+              <li class="splide__slide">
+                <img src="images/damkveti2.png" alt="Image 5" />
+              </li>
+              <li class="splide__slide">
+                <img src="images/damkveti3.png" alt="Image 6" />
+              </li>
+              <li class="splide__slide">
+                <img src="images/damkveti4.png" alt="Image 4" />
+              </li>
+              <li class="splide__slide">
+                <img src="images/damkveti5.png" alt="Image 5" />
+              </li>
+              <li class="splide__slide">
+                <img src="images/damkveti6.png" alt="Image 6" />
+              </li>
+              <li class="splide__slide">
+                <img src="images/damkveti7.png" alt="Image 4" />
+              </li>
+              <li class="splide__slide">
+                <img src="images/damkveti8.png" alt="Image 5" />
+              </li>
+              <li class="splide__slide">
+                <img src="images/damkveti9.png" alt="Image 6" />
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="title-container">
+          <h4>პარტნიორები</h4>
+        </div>
+        <div id="carousel3" class="splide">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <img src="images/partners1.png" alt="Image 4" />
+              </li>
+              <li class="splide__slide">
+                <img src="images/partners2.png" alt="Image 5" />
+              </li>
+              <li class="splide__slide">
+                <img src="images/partners3.png" alt="Image 6" />
+              </li>
+              <li class="splide__slide">
+                <img src="images/partners4.png" alt="Image 4" />
+              </li>
+              <li class="splide__slide">
+                <img src="images/partners5.png" alt="Image 5" />
+              </li>
+              <li class="splide__slide">
+                <img src="images/partners6.png" alt="Image 6" />
+              </li>
+              <li class="splide__slide">
+                <img src="images/partners7.png" alt="Image 4" />
+              </li>
+              <li class="splide__slide">
+                <img src="images/partners8.png" alt="Image 5" />
+              </li>
+              <li class="splide__slide">
+                <img src="images/partners9.png" alt="Image 6" />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="info-container">
+          <div class="info-container1">
+            <img src="images/builder.png" alt="builde logo" />
+            <p>450</p>
+            <h4>თანამშრომელი</h4>
+          </div>
+          <div class="info-container1">
+            <img src="images/deal.png" alt="handshake logo" />
+            <p>65</p>
+            <h4>დამკვეთი</h4>
+          </div>
+          <div class="info-container1">
+            <img src="images/project-management.png" alt="managment logo" />
+            <p>90</p>
+            <h4>პროექტი</h4>
+          </div>
+          <div class="info-container1">
+            <img src="images/service.png" alt="service logo" />
+            <p>31</p>
+            <h4>ტექნიკის ერთეული</h4>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <img src="images/delour1.jpg" />
+        <div class="one-container">
+          <h4>კომპანიის შესახებ</h4>
+          <ul>
+            <li>
+              <a href="html/crew.html">ელემენტ კონსტრაქშენის გუნდი</a>
+            </li>
+            <li>
+              <a href="html/workingsafety.html">შრომის უსაფრთხოება</a>
+            </li>
+            <li>
+              <a href="html/qualitycontrol.html">ხარისხის უზრუნველყოფა</a>
+            </li>
+            <li>
+              <a href="html/partners.html">დამკვეთები/პარტნიორები</a>
+            </li>
+            <li>
+              <a href="html/Career.html">კარიერა</a>
+            </li>
+          </ul>
+        </div>
+        <div class="one-container">
+          <h4>სერვისები</h4>
+          <ul>
+            <li>
+              <a href="html/project.html">პროექტირება</a>
+            </li>
+            <li>
+              <a href="html/building.html">მშენებლობა</a>
+            </li>
+            <li>
+              <a href="html/repair.html">რემონტი</a>
+            </li>
+            <li>
+              <a href="html/Industrialconstruction.html"
+                >სამრეწველო მშენებლობა</a
+              >
+            </li>
+            <li>
+              <a href="html/productionfloors.html">საწარმოო იატაკები</a>
+            </li>
+          </ul>
+        </div>
+        <div class="one-container">
+          <h4>კონტაქტი</h4>
+          <ul class="contact-ul">
+            <li>
+              <a><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+              <a><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+              <a><i class="fa-brands fa-youtube"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="./node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
+    <script src="./node_modules/@splidejs/splide-extension-auto-scroll/dist/js/splide-extension-auto-scroll.min.js"></script>
+    <script type="module" src="js/script.js"></script>
+  </body>
+</html>
